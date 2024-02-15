@@ -1,0 +1,30 @@
+.about-lab {
+}
+.fio-block {
+
+		&__about-lab {
+		}
+}
+.creator {
+        margin-bottom: 19px;
+		&__about-lab {
+            display: flex;
+            p{
+                color: #FFF;
+                font-family: var(--font-accent);
+                font-size: 14.565px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%; /* 14.565px */
+            }
+		}
+}
+.date-create {
+    color: #B5B5B5;
+    font-family: var(--font-accent);
+    font-size: 14.565px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 14.565px */
+    margin-left: 18px;
+}

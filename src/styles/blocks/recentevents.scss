@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.recent-events {
+display: flex;
+flex-direction: column;
+margin-top: 47px;
+.recent-title {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 24.713px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 24.713px */
+    text-align: center;
+    margin-bottom: 21px;
+}
+.recent-items {
+
+    .recent-item {
+        min-width: 100%;
+        height: 104px;
+        background-color: #404040;
+        border-radius: 14px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 5px 9px 5px 9px;
+    }
+    .recent-status {
+        p{
+            color: #FFF;
+            font-family: Mulish;
+            font-size: 11.658px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.117px;
+
+            span{
+                color: #FFF;
+                font-family: Mulish;
+                font-size: 11.658px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.117px;
+            }
+        }
+    }
+    .recent-participants-date {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .recent-participants {
+            display: flex;
+            align-items: center;
+
+            img{
+
+            }
+            p{
+                color: #AAA;
+                font-family: 'Poppins', sans-serif;
+                font-size: 11.658px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 15.1px; /* 129.529% */
+                letter-spacing: -0.117px;
+            }
+        }
+        .recent-date {
+            p{
+                color: #FFF;
+                font-family: 'Poppins', sans-serif;
+                font-size: 15.1px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 15.1px; /* 100% */
+                letter-spacing: -0.151px;
+            }
+        }
+    }
+    .name-recent-events {
+        display: flex;
+        justify-content: space-between;
+        h2{
+            color: #FFF;
+            font-family: Mulish;
+            font-size: 20.984px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.21px;
+        }
+        button{
+            color: #7B7B7B;
+            font-family: 'Poppins', sans-serif;
+            font-size: 11.658px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 15.1px; /* 129.529% */
+            letter-spacing: -0.117px;
+            background-color: #40404000;
+            border: 0px solid #404040;
+        }
+    }
+}
+
+}

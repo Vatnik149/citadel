@@ -1,0 +1,18 @@
+.search{
+    border-radius: 12.137px;
+    background: #505050;
+    width: 297.972px;
+    height: 48.549px;
+    #search{
+        border-radius: 12.137px;
+        background-color: #505050; /* Изменено на цвет #505050 */
+        padding: 9px 4px 9px 40px;
+        color: hsl(0, 0%, 50%);
+        font-family: Mulish;
+        font-size: 19.42px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 19.42px */
+        background: transparent url("../../assets/Search.svg") no-repeat 13px center;
+    }
+}

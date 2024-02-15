@@ -1,0 +1,72 @@
+.form_block{
+    
+    form{
+        max-width: 435px;
+        display: flex;
+        flex-direction: column;
+        div{
+            input{
+                background-color:--page-bg ;
+                border-bottom:1.32px solid #fff ;
+                color: rgba(255, 255, 255, 0.50);
+                width: 435px;
+                font-family: Mulish;
+                font-size: 18.956px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%; /* 18.956px */
+                padding: 9px 4px 9px 40px;
+               
+
+                &#login{
+                    background: transparent url("../../assets/icons/logininput.svg") no-repeat 13px center;
+                }
+                &#password{
+                    background: transparent url("../../assets/icons/passinput.svg") no-repeat 13px center;
+                }
+                &::placeholder{
+                    padding-left: 28.7px;
+                }
+            }
+            &.password_block{
+                margin-top: 42px;
+            }
+    
+        }
+        
+        .info_block{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 68px;
+            .reset_password{
+                color: #FFF;
+                text-align: center;
+                font-family: Mulish;
+                font-size: 18.956px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 100%; 
+            }
+            .button-block{
+                .submit-button{
+                    button{
+                        width: 136.683px;
+                        height: 40.681px;
+                        flex-shrink: 0;
+                        border-radius: 165.234px 16.523px;
+                        background: #FFF;
+                        color: #000;
+                        text-align: center;
+                        font-family: Mulish;
+                        font-size: 18.956px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 100%; /* 18.956px */
+                    }
+                }
+            }
+        }
+        
+    }
+}

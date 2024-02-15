@@ -1,0 +1,24 @@
+.managebutton{
+    width: 158.492px;
+    height: 40.468px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Monda;
+    font-size: 18.105px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 18.105px */
+
+    &.start{
+        border-radius: 11.316px;
+        background: #6BD07B;
+    }
+    &.stop{
+        border-radius: 11.316px;
+        background: #E36262;
+    }
+    &.otkat{
+        border-radius: 11.316px;
+        background: #24BCD0;
+    }
+}

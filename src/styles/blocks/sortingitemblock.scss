@@ -1,0 +1,102 @@
+.sortingitem-block{
+    display: flex;
+    flex-direction: column;
+    margin-top: 29px;
+    .items{
+        width: 924px;
+        height: 178px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        background: #273940;
+        display: flex;
+        justify-content: space-between;
+        padding: 19px;
+        margin-bottom: 8px;
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 90vh;
+            .namedesc{
+                border-left:2px solid #9B9B9B ;
+                h2{
+                    color: #FFF;
+                    font-family: 'Monda', sans-serif;
+                    font-size: 17.645px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 100%; /* 17.645px */
+                    margin: 0px 0px 19px 13px;
+                }
+                p{
+                    color: #FFF;
+                    font-family: 'Monda', sans-serif;
+                    font-size: 20.229px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 100%; /* 20.229px */
+                    margin: 0px 0px 0px 13px;
+                }
+            }
+            .footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .icons-info{
+                    display: flex;
+                    align-items: center;
+                    flex: 0px 0px 700px;
+                    button{
+                        display: flex;
+                        align-items: center;
+                        margin: 0px 25px 0px 0px;
+                        img{
+                            width: 24px;
+                            height: 24px;
+                            padding: 3px 3px 3px 5px;
+                        }
+                        p{
+                            color: #888;
+                            font-family: Mulish;
+                            font-size: 14.621px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 100%; /* 14.621px */
+                        }
+                    }
+                }
+                .name-date{
+                    display: flex;
+                    
+                    flex-shrink: 0px 200px;
+                    .name{
+                        color: #FFF;
+                        font-family: 'Monda', sans-serif;
+                        font-size: 14.565px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 100%; /* 14.565px */
+                        margin-right: 39px;
+                    }
+                    .date{
+                        color: #FFF;
+                        font-family: 'Monda', sans-serif;
+                        font-size: 14.565px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 100%; /* 14.565px */
+                        margin-right: 29px;
+                    }
+                }
+            }
+        }
+        .pic-block{
+    
+            flex: 0 0 17px;
+            img{
+
+            }
+        }
+    }
+}

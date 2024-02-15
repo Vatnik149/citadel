@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Monda:regular,700);
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+
+@import "./blocks/form.scss";
+@import "./blocks/login.scss";
+@import "./blocks/interface.scss";
+@import "./blocks/selected.scss";
+@import "./blocks/search.scss";
+@import "./blocks/sorting.scss";
+@import "./blocks/sortingitemblock.scss";
+@import "./blocks/datepicker.scss";
+@import "./blocks/event.scss";
+@import "./blocks/header.scss";
+@import "./blocks/headerlab.scss";
+@import "./blocks/recentevents.scss";
+
+
+.container{
+    padding-left: 266px;
+    padding-right: 288px;
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    margin-top:160px;
+}

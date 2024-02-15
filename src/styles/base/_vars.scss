@@ -1,0 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Mulish:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Monda:regular,700);
+:root {
+	--font-main: 'Mulish', sans-serif;
+	--font-accent: 'Monda', serif;
+	--page-bg: #252526;
+    --text-color: #fff;
+}
+.white {
+    --page-bg: #ffffff;
+    --text-color: #000000;
+}

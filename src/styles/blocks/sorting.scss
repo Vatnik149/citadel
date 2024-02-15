@@ -1,0 +1,28 @@
+.sorting{
+    
+    .sorting-block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+.fio-block{
+    h4{
+        color: #C3C3C3;
+        font-family: 'Monda', sans-serif;
+        font-size: 28.32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 28.32px */ 
+        margin-bottom: 40px;
+        span{
+            color: #FFF;
+            font-family: 'Monda', sans-serif;
+            font-size: 28.32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%;
+        }
+    }
+}

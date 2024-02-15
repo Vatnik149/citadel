@@ -1,0 +1,31 @@
+.events{
+
+    margin-top: 60px;
+    .today-events{
+        border: 0.989px solid #636363;
+        padding: 20px 29px 20px 29px;
+        border-radius: 0px 0px 14.828px 14.828px;
+        .desc{
+            border-left:6px solid #9E4545 ;
+            padding-left:5px ;
+            .name{
+                color: #FFF;
+                font-family: Mulish;
+                font-size: 15.893px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.159px;
+            }
+            .date{
+                color: #FFF;
+
+                font-family: Mulish;
+                font-size: 14.127px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}
