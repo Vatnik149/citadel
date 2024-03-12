@@ -18,7 +18,7 @@ function App() {
 
   useEffect(()=>{
     if(localStorage.getItem('token')){
-      store.checkAuth();
+      
       
     }
   }, [])

@@ -15,7 +15,7 @@ const LoginForm:FC =() => {
 
   const handleData = (event:any) =>{
     event.preventDefault();
-    store.login("stErp830Task723nba@", "pam", "admin");
+    store.login(password, "pam", login);
   }
   
   return (
