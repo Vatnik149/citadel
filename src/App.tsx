@@ -17,11 +17,10 @@ function App() {
   const {store} = useContext(Context);
 
   useEffect(()=>{
-    if(localStorage.getItem('token')){
-      
-      
-    }
+    store.refreshToken();
+    console.log(store.username)
   }, [])
+
   if(store.isLoading){
     return(
     <div>Загрузка...</div>
@@ -31,7 +30,6 @@ function App() {
     return(
       <Routes>
         <Route path="/" element={<Login />} />
-        
       </Routes>
     )
   }

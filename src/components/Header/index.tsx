@@ -11,12 +11,19 @@ import moon from '../../assets/Moon.svg';
 import sun from '../../assets/Sun.svg';
 import polcit from '../../assets/polcit.svg'
 import logout from '../../assets/Logout.svg'
+import { Context } from '../..';
 const Header: FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
-
+  const {store} = useContext(Context);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  
+
+  const handleQuit = () => {
+    store.logout(); // Corrected method invocation
+    window.location.href = '/';
+  }
   
 
   return (
@@ -86,8 +93,8 @@ const Header: FC = () => {
               </ul>
             </nav>
             <div className="menu-footer">
-              <div className="quit">
-              <div className="icon">
+              <div className="quit" onClick={() => handleQuit()}>
+              <div className="icon" >
                     <img src={logout} alt="" />
                   </div>
                   <p>Выйти</p>

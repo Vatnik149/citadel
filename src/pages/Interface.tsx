@@ -11,6 +11,9 @@ import Header from '../components/Header';
 import Sort from '../components/Sort';
 import Events from '../components/Events';
 import SortingItem from '../components/SortingItem';
+import TasksService from '../service/TasksService';
+import { ITaskList } from '../models/ITaskList';
+import { store } from '..';
 
 const Interface:FC =() => {
 
@@ -21,16 +24,14 @@ const Interface:FC =() => {
       if (element.parentNode) {
         element.parentNode.removeChild(element);
       }
-    });
+    }, []);
   }
+
   useEffect(()=>{
     removeElementByStyles();
+    console.log(store.username)
   })
-  
-  // Call the function when needed
-  
-  
-  
+
  
   return (
     <div className="interface ">
@@ -38,7 +39,7 @@ const Interface:FC =() => {
         <main className='container'>
           <div className="interface-items">
             <div className="fio-block">
-                    <h4>Здравствуйте, <span>Сергей Витальевич</span></h4>
+                    <h4>Здравствуйте, <span>{store.username}</span></h4>
                 </div>
               <section className='sortItems-block'>
                 <Sort/>

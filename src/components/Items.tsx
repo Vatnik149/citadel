@@ -4,14 +4,18 @@ import users from "../assets/users.svg"
 import fire from "../assets/fire.svg"
 import citadelitem from "../assets/citadelitem.svg"
 import { Link } from 'react-router-dom'
-const LabItems:FC =() => {
+import { ITaskList } from '../models/ITaskList'
+
+
+const LabItems:FC<ITaskList> =({id,kind, number, theme, group,complexity,start_at, author   }) => {
+  const newGroup = group.replace(/\[|\]/g, '');
   return (
 
-        <Link to={"/labpage-details/:id"} className="items">
+        <Link to={`/labpage-details/${id}`} className="items">
             <div className="info">
                 <div className="namedesc">
-                    <h2>Лабораторная работа №1</h2>
-                    <p>DDoS-атака</p>
+                    <h2>{kind} {number}</h2>
+                    <p>{theme}</p>
                 </div>
                 <div className="footer">
                     <div className="icons-info">
@@ -21,19 +25,19 @@ const LabItems:FC =() => {
                         </button>
                         <button>
                             <img src={users} alt=""  />
-                            <p>Участники: 5/28</p>
+                            <p>Участники: {newGroup}</p>
                         </button>
                         <button>
                             <img src={fire} alt=""  />
-                            <p>Сложность: 3/10</p>
+                            <p>Сложность: {complexity}/10</p>
                         </button>
                     </div>
                     <div className="name-date">
                         <div className="name">
-                            <p>Петров И. M.</p>
+                            <p>{author}</p>
                         </div>
                         <div className="date">
-                            <p>24 октября 2023 года</p>
+                            <p>{start_at}</p>
                         </div>
                     </div>
                 </div>

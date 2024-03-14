@@ -15,7 +15,7 @@ const LoginForm:FC =() => {
 
   const handleData = (event:any) =>{
     event.preventDefault();
-    store.login(password, "pam", login);
+    store.login(password, "pve", login);
   }
   
   return (
