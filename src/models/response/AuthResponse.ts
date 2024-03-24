@@ -5,4 +5,5 @@ export interface AuthResponse{
     refresh:string;
     user_id:string;
     username:string;
+    msg:string
 }

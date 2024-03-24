@@ -7,4 +7,7 @@ export default class TasksService{
     static async getAllTask(kind:string, theme:string, groups:string){
         return $api.get(`task/list?kind=${kind}&theme=${theme}&group=${groups}`)
     }
+    static async getOneTask(id:string){
+        return $api.get(`task/${id}`)
+    }
 }

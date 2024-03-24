@@ -1,0 +1,78 @@
+
+.lab-group {
+}
+.lab-vm {
+    padding:20px 58px;
+    border: 1px solid #636363;
+    border-radius: 14.15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.context__text {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: var(--font-main);
+    font-weight: 800;
+}
+.vm-items {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+    gap: 13px;
+}
+.vm-item {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    justify-items: center;
+    gap: 17px;
+}
+.userid {
+    color: #FFFFFF;
+    font-family: var(--font-main);
+    font-size: 21px;
+    
+}
+.ipadrs {
+    color: #FFFFFF;
+    font-family: var(--font-main);
+    font-size: 16.3px;
+    padding:4px 13px ;
+    background-color: #2A3C43;
+    border-radius: 6px;
+}
+.btn.btn__copyIp {
+    width: 33.66px;
+    height: 33.06px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6.35px;
+    background-color: #3F7E50;
+}
+.participants{
+    color: #888888;
+    font-size: 14.62px;
+    font-family: var(--font-main);
+}
+.recent-events {
+}
+.recent-title {
+}
+.recent-items {
+}
+.recent-item {
+}
+.recent-status {
+}
+.recent-participants-date {
+}
+.recent-participants {
+}
+.recent-date {
+}
+.name-recent-events {
+}

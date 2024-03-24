@@ -28,4 +28,33 @@
             }
         }
     }
+    .addEvents{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .content__text{
+            color: #FFF;
+            font-family: Mulish;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.159px;
+        }
+    }
+}
+.btn{
+            
+            
+    &__addEvents{
+        width: 50px;
+        height: 50px;
+        padding: 4px 3px;
+        background-color: #FFF;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

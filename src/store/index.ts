@@ -43,15 +43,20 @@ export default class Store {
     setLoading(bool: boolean) {
         this.isLoading = bool;
     }
-    async login(username:string,service:string, password:string) {
+    async login(username: string, service: string, password: string) {
         try {
             const response = await AuthService.login(password, service, username);
+            if (response.data?.msg) {
+                alert(response.data?.msg); // Выводим сообщение в alert
+            }
             localStorage.setItem('retoken', response.data.refresh);
             localStorage.setItem('token', response.data.access);
             this.setAuth(true);
             this.setUsername(response.data.username);
-            console.log(response)
-        } catch (e:any) {
+            console.log(response);
+    
+            
+        } catch (e: any) {
             console.log(e);
         }
     }
@@ -60,7 +65,10 @@ export default class Store {
             const response = await AuthService.refreshToken();
             localStorage.setItem('token', response.data.access);
             this.setAuth(true);
-            
+            this.setUserId(response.data.user_id)
+            this.setUsername(response.data.username)
+            console.log(this.username)
+            console.log(this.userId)
         }
         catch{}
         finally{}
@@ -90,24 +98,4 @@ export default class Store {
 //            console.log(e.response?.data?.message);
 //        }
 //    }
-
-   async checkAuth() {
-    //    this.setLoading(true);
-       try {
-           const response = await $api.post<AuthResponse>(`${API_URL}token/refresh`)
-           console.log(response);
-           localStorage.setItem('token', response.data.access);
-           this.setAuth(true);
-        //    this.setUser(response.data.user);
-       } catch (e:any) {
-           console.log(e.response?.data?.message);
-       } finally {
-           this.setLoading(false);
-       }
-    if (localStorage.getItem('token')) {
-        this.setAuth(true);
-    } else {
-        this.setAuth(false);
-    }
-   }
 }

@@ -18,7 +18,6 @@ function App() {
 
   useEffect(()=>{
     store.refreshToken();
-    console.log(store.username)
   }, [])
 
   if(store.isLoading){

@@ -1,0 +1,32 @@
+.button{
+    padding: 11px 46px;
+    background-color: #cfbcbc;
+
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+    font-family: var(--font-main);
+
+    font-weight: 800;
+
+    &__startBtn{
+        background-color: #6BD07B;
+    }
+    &__stopBtn{
+        background-color: #E36262;
+    }
+    &__otkatBtn{
+        background-color: #24BCD0;
+    }
+
+    &:hover{
+        border: 1px solid rgb(255, 255, 255);
+        margin: -1px;
+        background-color: #424242;
+        color: rgb(255, 255, 255);
+    }
+}
+.manageButton-block{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}

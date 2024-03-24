@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import { ITaskList } from '../models/ITaskList'
 
 
-const LabItems:FC<ITaskList> =({id,kind, number, theme, group,complexity,start_at, author   }) => {
+const LabItems:FC<ITaskList> =({id,kind, number, theme, group,complexity,start_at, author  }) => {
   const newGroup = group.replace(/\[|\]/g, '');
   return (
 
@@ -34,7 +34,7 @@ const LabItems:FC<ITaskList> =({id,kind, number, theme, group,complexity,start_a
                     </div>
                     <div className="name-date">
                         <div className="name">
-                            <p>{author}</p>
+                            <p>{author.replace('teacher : ', '')}</p>
                         </div>
                         <div className="date">
                             <p>{start_at}</p>
